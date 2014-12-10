@@ -48,7 +48,7 @@ U
 
 ** Cuidiú **
 
-Ba dhúshlán suimiúil sa ríomhfhoghlaim é an ríomhchlár seo. Bhí sé an-éasca
+Ba dhúshlán suimiúil sa ríomhfhoghlaim é an tionscadal seo. Bhí sé an-éasca
 dul thar fóir le linn an phróisis traenála ("overfitting" i mBéarla). Baineann
 an fhadhb le foirmeacha a léiríonn fíordhifríocht idir na canúintí agus
 litrithe éagsúla a d'úsáid údair sa chorpas nach mbaineann le 
@@ -58,6 +58,6 @@ i gCúige Connacht).  Mar sin, ba mhór an chabhair é an tsamhail a "bhearradh"
 agus gan ach na gnéithe is suntasaí a choinneáil. Gheobhaidh tú na gnéithe
 seo sa chomhad "features.txt". Sílim go bhfuil sé suimiúil an comhad seo
 a bhrabhsáil fiú mura bhfuil suim mhór agat sna mionsonraí teicniúla - arís,
-is éard atá ann ná na gnéithe is suntasaí idir na canúintí, bunaithe
+is éard atá ann ná na gnéithe is suntasaí ó thaobh canúna, bunaithe
 go hiomlán ar anailís staitistiúil.   Fearaim fáilte roimh cheartúcháin,
 moltaí, nó focail/frásaí eile ba chóir dom a chur leis an liosta gnéithe.
