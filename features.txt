@@ -1,0 +1,374 @@
+# Two regex fields separated by a tab.
+# First field is the feature F, and the second is the "universe" G
+# of n-grams from which its conditional probability P(F|G) is estimated
+#
+# In the comments below, read "=>" as "is a strong signal that the
+# text should be labeled...", *not* as "implies..."
+#
+# Eclipsis of b,c,f,g,m,p after simple prep + singular article => M or C
+(a[grs]|ins|leis|roimh|thar|[ft]h?ríd|um) an (gc|bhf|ng|m[^h]|bp)	(a[grs]|ins|leis|roimh|thar|[ft]h?ríd|um) an ([bcfgmp]|ng)
+# same as above, with fused preposition/article => M or C
+(faoin|fén|ón|(in)?san?) (gc|bhf|ng|m[^h]|bp)	(faoin|fén|ón|(in)?san?) ([bcfgmp]|ng)
+# Eclipsis of b,c,f,g,m,p after "chuig an" => C
+chuig an (gc|bhf|ng|m[^h]|bp)	chuig an ([bcfgmp]|ng)
+# Eclipsis of b,c,f,g,m,p after "den" or "don" => M
+d[eo]n (gc|bhf|ng|m[^h]|bp)	d[eo]n ([bcfgmp]|ng)
+# Eclipsis of d or t in just about all dative situations => M
+# includes "um an dtaca sin"
+(a[grs]|ins|leis|roimh|thar|[ft]h?ríd|um) an (dt|nd)	(a[grs]|ins|leis|roimh|thar|[ft]h?ríd|um) an (n?d|t[^s])
+(faoin|fén|ón|(in)?san?) (dt|nd)	(faoin|fén|ón|(in)?san?) (n?d|t[^s])
+d[eo]n (dt|nd)	d[eo]n (n?d|t[^s])
+# Lenition in dative with most prepositions => U
+(a[grs]|chuig|ins|leis|roimh|thar|[ft]h?ríd|um) an [bcfgmp]h[^f]	(a[grs]|chuig|leis|roimh|thar|[ft]h?ríd|um) an ([bcfgmp]|ng)
+# Lenition possible after some preposition in Munster too (=> M or U)
+# note than "san + [bcgmp]h[^f]" occurs in all three dialects, so not here
+# same for den/don
+(faoin|fén|ón|sa|(in)?san) [bcgmp]h[^f]	(faoin|fén|ón|sa|(in)?san) (bh[^f]|b[^h]|[cgmp]|ng)
+# => M
+insa [bcgmp]h[^f]	insa (bh[^f]|b[^h]|[cgmp]|ng)
+# mostly Connacht words...
+acab
+achair
+achar
+aimhreas
+andiú
+aonraic
+arae
+araile
+bhfalach
+bhfataí
+bhfoisgeacht
+bhfoigseacht
+bhíonns
+caiptín
+cantal
+cantalach
+céard
+céibh
+cén chaoi
+cé'n chaoi
+'chaon
+chaon
+'chuile
+'ch uile
+chuile
+chuireanns
+compóirt
+compóirteach
+d'fheiceadh
+d'fheicfeá
+d'fheicfeadh
+d'fheil
+eicín
+eicínt
+éindí
+falach
+falamh
+faoi réir
+fata
+fataí
+feamainn
+feamainne
+fearacht
+feicthear
+feileamhnach
+feiliúnach
+feilm
+feilméar
+feilméara
+feilméaracht
+fhata
+fhataí
+fhearacht
+fheicfeas
+freisin
+ghníonn
+goir
+innseacht
+inseacht
+ionnós
+lánchinnte
+leanacht
+leob
+leób
+maiseadh
+malrach
+marach
+meanga
+meangadh
+móiméad
+móiméid
+móimid
+moite
+n-aimhreas
+nóiméad
+noiméad
+paráiste
+phighin
+pighin
+plód
+póilíos
+ríméad
+ríméadach
+sách
+seafóid
+sinneán
+slíocadh
+smugairle
+sólásach
+spéacláirí
+spreacadh
+srannadh
+stróiceadh
+t-achar
+tada
+taoille
+teara
+théidheanns
+thidheacht
+thigeanns
+timpist
+timpiste
+toisiú
+tonntracha
+tórainn
+'tuige
+# mostly munster words...
+ab ea
+áfach
+ambaiste
+ambasa
+annsain
+ansa
+ansan
+anso
+ansúd
+aoinne
+as san
+ataoi
+bhfalla
+cathain
+choinnibh
+chuas
+conas
+conus
+cuaird
+cuirfad
+dailtín
+d'aoinne
+dein
+deineadh
+deineann
+deinidh
+deintear
+deintí
+des na
+dhailtín
+dhein
+dheineadar
+dheineadh
+dheinean
+dheineann
+dheineas
+dheinis
+do bhíos
+do bhuaileas
+do chonaic
+do chuireas
+do ghaibh
+do labhair
+do luigh
+do phreab
+do rugadh
+dos na
+do stad
+do theip
+do thuig
+do tugadh
+éinní
+fágáilt
+fágaint
+falla
+fanmhaint
+fé
+féinig
+feiscint
+feisgint
+fé'n
+fén
+fhágáilt
+fhágaint
+fhalla
+fheadar
+fhiachaint
+foláir
+gabháilt
+garsún
+gcoinnibh
+gharsún
+gheibhean
+gheibheann
+gheibhtear
+h-aoinne
+haoinne
+is ea
+iseadh
+istig
+lagú
+laistiar
+laistigh
+lasmuich
+lasmuigh
+lastiar
+lastoir
+lastuaidh
+lastuas
+leanfad
+leogaint
+naomhóg
+naomhóga
+naomhóig
+naomhóige
+ndeineadh
+ndeinidh
+ndeintear
+neómat
+neómataí
+oireamhnach
+oiriúnach
+phráta
+phrátaí
+práta
+prátaí
+puinn
+puínn
+saghas
+sara
+sceitimíní
+shaghas
+stracaire
+tabharfad
+tarna
+teiche
+tharrac
+thógaint
+tiocfad
+tógaint
+toisc
+tsaghas
+t-ubh
+# mostly Ulster words...
+achan
+áirneáil
+áirneál
+ar ndóighe
+ar scor
+ar sgor
+astar
+astoigh
+bhocsa
+bhomaite
+bocsa
+bomaite
+cabhsa
+caidé
+callán
+cha
+chan
+chluinstin
+cionn is
+cionn's
+cluinstin
+contráilte
+dtoigh
+dtólamh
+eighinteacht
+éighinteacht
+fá dear
+fá dtaobh
+féacháil
+fóirsteanach
+fóirstin
+fóirstineach
+fosta
+gasraí
+geafta
+gheafta
+gheibh
+ghirseach
+ghnoithe
+girseach
+gnoithe
+gnoitheach
+gnoithí
+goidé
+innse
+inteacht
+ínteacht
+istoigh
+laftán
+leabharthaí
+leanstan
+leoga
+leóga
+mallaibh
+mbomaite
+mhillteanach
+millteanach
+ngnoithe
+péas
+phill
+pilleadh
+póitín
+préata
+preáta
+préataí
+preátaí
+# "rabh" is a strong U signal but common enough in
+# certain C texts that it causes problems in those cases
+# rabh
+s'againn
+s'againne
+scaifte
+scéaltaí
+scíste
+seort
+seórt
+sgaifte
+sgéaltaí
+sgíste
+smaointeadh
+smaointigh
+smaointiú
+smaoitigh
+smaoitiú
+smuaintigh
+spéarthaí
+spléachadh
+tachrán
+taisme
+tchí
+tchídh
+tchífeá
+tchífeadh
+tchífeas
+tchífidh
+tchím
+tchímid
+tchíodh
+tchíthear
+tseort
+tseórt
+thuigbheáil
+toigh
+toighe
+toiseacht
+tuigbheáil
+# non-Connacht words
+# non-Munster words
+ariamh
+foighid
+madadh
+# non-Ulster words
+dteannta
+treasna
