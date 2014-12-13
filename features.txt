@@ -361,6 +361,7 @@ tabharfad
 taibhreamh
 taoide
 tarna
+tarrac
 teiche
 thaoide
 tharrac
@@ -423,6 +424,7 @@ cuidiú
 dealgáin
 dealgán
 dhruidte
+domh
 druidte
 dtoigh
 dtólamh
@@ -586,6 +588,7 @@ congnamh
 cúnamh
 deatach
 deataigh
+dhom
 dteannta
 fós
 glaodhach
