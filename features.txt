@@ -58,6 +58,7 @@ chasaoid
 chasaoideach
 chloisteáil
 chloisteál
+chonnairc
 'chuile
 'ch uile
 chuile
@@ -112,6 +113,7 @@ fhoscailt
 fhosgailt
 foscailt
 fosgailt
+fré
 freisin
 gallaoireach
 ghníonn
@@ -188,6 +190,7 @@ ambaiste
 ambasa
 amhastrach
 annsain
+annsan
 ansa
 ansan
 anso
@@ -294,10 +297,13 @@ Gaoluinn
 Gaoluinne
 garsún
 gcoinnibh
+gcuma san
 gearáin
 gearán
 gearánach
 gearánta
+Ghaelainn
+Ghaeluinn
 Ghaolainn
 Ghaoluinn
 gharsún
@@ -326,6 +332,9 @@ madra
 madraí
 mhadra
 mhadraí
+ná beadh
+ná béadh
+ná fuil
 naomhóg
 naomhóga
 naomhóig
@@ -347,8 +356,19 @@ prátaí
 puinn
 puínn
 rámhan
+roimis
 saghas
+san a
+san ach
+san agus
+san amach
+san féin
+san go
+san gur
+san i
+sar
 sara
+sarar
 sceamhghail
 sceamhghal
 sceamhaíl
@@ -359,6 +379,7 @@ sranntarnaigh
 stracaire
 tabharfad
 taibhreamh
+#taoi; "Fear Taoi" in Ulster training set :/
 taoide
 tarna
 tarrac
@@ -373,12 +394,17 @@ toisc
 tsaghas
 t-ubh
 # mostly Ulster words...
+a inse
 achan
+ag inse
 áirneáil
 áirneál
 amharcaidh
 amharcann
 amharcas
+an dóigh
+aon dóigh
+ar dóigh
 ar ndóighe
 ar scor
 ar sgor
@@ -421,6 +447,8 @@ cuideadh
 cuidighthe
 cuidithe
 cuidiú
+daobhtha
+daofa
 dealgáin
 dealgán
 dhruidte
@@ -506,6 +534,7 @@ preátaí
 # "rabh" is a strong U signal but common enough in
 # certain C texts that it causes problems in those cases
 # rabh
+sa dóigh
 s'againn
 s'againne
 scaifte
