@@ -62,7 +62,8 @@ for my $c (keys %answer) {
 		$result = $c;
 	}
 }
-$result = 'N' if ($result ne 'U' and abs($answer{'C'}-$answer{'M'})/abs($answer{'C'}) < 0.1);
+$result = 'N' if ($answer{'C'} == 0 and $answer{'U'} == 0 and $answer{'M'} == 0);
+$result = 'N' if ($result eq 'N' or ($result ne 'U' and (abs(answer{'C'}) != 0 and abs($answer{'C'}-$answer{'M'})/abs($answer{'C'}) < 0.1)));
 print "$result\n";
 
 exit 0;
