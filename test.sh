@@ -3,7 +3,7 @@
 
 # one arg is twitter username
 get_dialect() {
-	bash ${HOME}/gaeilge/crubadan/twitter/twby ga "${1}" | cut -f 3 | shuf | head -n 100 | bash canuint.sh
+	bash ${HOME}/gaeilge/crubadan/twitter/twby ga "${1}" | cut -f 3 | egrep -v 'RT' | shuf | head -n 100 | bash canuint.sh
 }
 
 # first arg is twitter username, second arg is "C", "M", "U", or "N"
